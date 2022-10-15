@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freelance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@300;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <canvas id="canvas_one"></canvas>
+    <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
+    <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
+        <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch pe-0">
+            <div class="col-3 text-center ms-lg-1">
+                <a href="#" class="navbar-brand">
+                    <!-- здесь нужно поместить логотип компании -->
+                    <img src="images/logo.svg" alt="" width="100" height="auto" class="img-fluid logo">
+                    <!-- с размерами можно играться -->
+                </a>
+            </div>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <!-- здесь сделать меню бургер 3 полосы-->
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </button>
+            <div class="offcanvas offcanvas-top h-100 text-bg-dark align-items-sm-center flex-sm-grow-0 me-lg-5 mt-lg-4"
+                tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <!-- это наше меню, добавлен эффект подчёркивания при наведении на линк -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav" id="page-links">
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0 active" aria-current="page" href="#main">HOME</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#services">services</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#contacts">CONTACTS</a>
+                        </li>
+                    </ul>
+                    <hr class="mt-5">
+                    <div class="phone_and_mail d-sm-none p-3">
+                        <a href="tel: +380 950 237 867">+380 950 237 867</a>
+                        <p>freelancewb2022@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- здесь будет надпись фулл стак девелоперс и боковая надпись тоже -->
+    <div class="wrapper">
+		<div class="content">
+
+			<div class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">FULL STACK</div>
+						<div class="layers__title">DEVELOPERS</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(/Company/images/nature-ge05f6615c_1920.jpg);"></div>
+					<div class="layer layers__middle" style="background-image: url(/Company/images/Верхний\ слой.png);"></div>
+					<div class="layer layers__front" style="background-image: url(/Company/images/Средний\ слой.png);"></div>
+					<div class="layer layers__front" style="background-image: url(/Company/images/Нижний\ слой.png);"></div>
+				</div>
+    </div>
+    <main class="pt-5 pb-4" id="main">
+        <div class="container-fluid">
+            <div class="continer-sm text-center" id="about-us">
+                <h2 class="">About us</h2>
+                <p class="ps-2 pe-2 m-auto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit praesentium perferendis ad
+                    voluptatibus aut maiores consequatur pariatur expedita veniam accusamus inventore veritatis cumque
+                    reprehenderit, ex excepturi beatae reiciendis tempore non repudiandae aliquid. Provident, eum
+                    sapiente saepe maiores quis dolore non quae. Nisi, repellat at explicabo natus vitae esse impedit
+                    eos?
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
+            <div class="container-sm" id="skills">
+                <h2 class="">SKILLS</h2>
+                <div class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap">
+                    <div class="skill-block col-12 col-md-4">
+                        <p class="m-0">FIGMA</p>
+                        <img src="images/figma.svg" alt="" class="img-fluid">
+                        <span class="">DESIgN</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">Photoshop</p>
+                        <img src="images/adobe-ph.svg" alt="" class="img-fluid">
+                        <span class="">DESIgN</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">css</p>
+                        <img src="images/css.svg" alt="" class="img-fluid">
+                        <span class="">STYLE</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">HTML</p>
+                        <img src="images/html.svg" alt="" class="img-fluid">
+                        <span class="">FRONT-end</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">python</p>
+                        <img src="images/python.svg" alt="" class="img-fluid">
+                        <span class="">SCRIPTS</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">java script</p>
+                        <img src="images/js.svg" alt="" class="img-fluid">
+                        <span class="">SCRIPTS</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">BOOTSTRAP</p>
+                        <img src="images/b5.svg" alt="" class="img-fluid">
+                        <span class="">FRAMEWORK</span>
+                    </div>
+                    <div class="skill-block col-12">
+                        <p class="m-0">DJANGO</p>
+                        <img src="images/django.svg" alt="" class="img-fluid">
+                        <span class="">FRAMEWORK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
+            <div class="container-sm" id="portfolio">
+                <h2 class="">PORTFOLIO</h2>
+                <div
+                    class="containe-fluid p-0 mt-4 d-flex gap-1 gap-lg-4 justify-content-between justify-content-lg-start">
+                    <span class="active">ALL PROJECTS</span>
+                    <span class="">LENDING PAGE</span>
+                    <span class="">WEBSITE DESIGN</span>
+                </div>
+                <div class="container-fluid p-0 mt-3 d-flex flex-wrap">
+                    <div class="col-12 col-sm-7 col-lg-8"><img src="images/portfolio-1.png" alt=""
+                            class="img-fluid w-100 h-100 pt-2 pe-2 pb-2">
+                    </div>
+                    <div class="d-none d-sm-block col-sm-5 col-lg-4"><img src="images/portfolio-2.svg" alt=""
+                            class="img-fluid w-100 h-100 ps-2 pb-2 pt-2"></div>
+                    <div class="d-none d-sm-block col-sm-5 col-lg-4"><img src="images/portfolio-3.png" alt=""
+                            class="img-fluid w-100 h-100 pt-2 pe-2 pb-2"></div>
+                    <div class="d-none d-sm-block col-sm-7 col-lg-4"><img src="images/portfolio-4.svg" alt=""
+                            class="img-fluid w-100 h-100 p-2"></div>
+                    <div class="d-none d-lg-block col-lg-4"><img src="images/portfolio-3.svg" alt=""
+                            class="img-fluid w-100 h-100 ps-2 pb-2 pt-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
+            <div class="container-sm" id="services">
+                <h2 class="">SERVICES</h2>
+                <div class="container-fluid p-0 mt-3 d-flex flex-wrap gap-3 gap-lg-1 justify-content-lg-between">
+                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-4">
+                        <span>01</span>
+                        <h3>Web design and
+                            developing</h3>
+                        <p>Development of the structure
+                            and appearence of the site, as
+                            well as its programming</p>
+                        <a href="#">Order a service</a>
+                    </div>
+                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-4">
+                        <span>02</span>
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Thinking over the user structure
+                            and appearence of the site
+                            or interface</p>
+                        <a href="#">Order a service</a>
+                    </div>
+                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-4">
+                        <span>03</span>
+                        <h3>DIGITAL BRANDING</h3>
+                        <p>Brand development for the
+                            digital environment, online
+                            and any digital media</p>
+                        <a href="#">Order a service</a>
+                    </div>
+                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-4">
+                        <span>04</span>
+                        <h3>WEB PROGRAMMING</h3>
+                        <p>Programming your web system
+                            (online store, social network,
+                            video hosting, ordering and
+                            booking services, online
+                            calculators)</p>
+                        <a href="#">Order a service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 ">
+            <div class="pt-5 mb-5"></div>
+            <div class="container-sm" id="contacts">
+                <h2 class="">CONTACT WITH US</h2>
+                <div class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start">
+                    <!-- contact-us -->
+                    <div class="col-12 d-flex justify-content-between flex-wrap flex-sm-row-reverse col-lg-4 gap-lg-3">
+                        <div class="contact-block mb-4 col-6">
+                            <img class="icons" src="./images/Phone.svg">
+                            <p>+380 950 237 867</p>
+                        </div>
+                        <div class="contact-block mb-4 col-6">
+                            <img class="icons" src="./images/Mail.svg">
+                            <p>freelancewb2022@gmail.com</p>
+                        </div>
+                    </div>
+                    <form class="col-12 d-flex flex-column gap-3 col-lg-7" method="post">
+                        <div class="info col-12 d-flex justify-content-between flex-wrap gap-3">
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="Your Name">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="PHONE NUMBER">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="EMAIL ADRESS">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="SUBJECT">
+                            </label>
+                        </div>
+                        <textarea class="textarea" placeholder="WHAT DO YOU WANT?"></textarea>
+                        <button class="btn mt-2 mb-5 col-sm-4 ms-sm-auto m-lg-0 col-lg-5">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="container-sm pb-3 footer">
+                <hr class="hr-form m-0">
+                <img src="./images/logo.svg" class="img-fluid footer-logo">
+                <div
+                    class="pt-3 col-8 text-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 col-lg-9 pt-sm-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row">
+                    <a href="#main"><span>HOME</span></a>
+                    <a href="#skills"><span>SKILLS</span></a>
+                    <a href="#portfolio"><span>PORTFOLIO</span></a>
+                    <a href="#services"><span>SERVICES</span></a>
+                    <a href="#contacts" class="d-none d-lg-inline"><span>CONTACTS</span></a>
+                    <div class="footer-right text-center ms-lg-auto"> @2022 All reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery и js файлы -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="./js/fluid.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
